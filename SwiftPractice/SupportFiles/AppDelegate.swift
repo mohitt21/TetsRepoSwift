@@ -7,6 +7,7 @@
 /* Usually, splash screen is an image covering the entire screen and disappears after the main screen is loaded.
 The primary purpose of splash screen is to let user know your app is loading and give user an introductory screen showing your brand. Splash screen is especially important for apps that take longer time to launch. Perceptually, it gives a better user experience.The splash screen image should be in PNG format.
  
+ 
  */
 
 /*
@@ -20,7 +21,10 @@ The primary purpose of splash screen is to let user know your app is loading and
 /*  The launch image is designed to make the perceived launch time of you app feel faster by showing something resembling the interface that will be loaded as quickly as possible. Displaying a logo does nothing but draw attention to how quickly your app loads and adds nothing to the user’s experience.
  Splash screen means, that you display an Image until your necessary information loading not complete. Like, U can see any loading image before start any heavy game. When all data loading complete then this screen removed and game statrs. It may shows for little long. Because device screen sizes vary, launch screen sizes vary too.
  */
-// You can set the imageview on top of inital controller in order to implement backend api during launch of the applictaion as all the data we have  recieved we can hide it an dcontinue with our ui
+// You can set the imageview on top of inital controller in order to implement backend api during launch of the applictaion as all the data we have  recieved we can hide it an dcontinue with our ui.
+
+// you can set the same image view on initial controller as similar to launch image then as we recieve data from server then we push the another navigation controller with root view controller a home screen.
+// You can push a Initail controller which contain image as similar like launch image  and also in didbecomeactive function you can implement api also to fetch the application data.
 
 // NSAppTransportSecurity used to enable internet access in the application
 
@@ -93,17 +97,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+       
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+      
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
@@ -134,11 +136,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         task.resume()
         
         
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+       
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+       
     }
 
 
