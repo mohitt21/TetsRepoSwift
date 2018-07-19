@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2ch-1m-3zE">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BaseVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="BaseVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="BaseVC" customModule="SwiftPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Launch ScreenVC-->
+        <scene sceneID="qZk-Wa-JTv">
+            <objects>
+                <viewController storyboardIdentifier="LaunchScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2ch-1m-3zE" customClass="LaunchScreenVC" customModule="SwiftPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MI3-Yb-8oe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImg" translatesAutoresizingMaskIntoConstraints="NO" id="1Nl-LH-q9O">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Nl-LH-q9O" firstAttribute="top" secondItem="MI3-Yb-8oe" secondAttribute="top" id="Hie-N7-9Y4"/>
+                            <constraint firstItem="1Nl-LH-q9O" firstAttribute="leading" secondItem="ZIT-fc-27c" secondAttribute="leading" id="WWq-r9-MQh"/>
+                            <constraint firstItem="ZIT-fc-27c" firstAttribute="trailing" secondItem="1Nl-LH-q9O" secondAttribute="trailing" id="e62-Gt-dF3"/>
+                            <constraint firstAttribute="bottom" secondItem="1Nl-LH-q9O" secondAttribute="bottom" id="qDh-Ad-xSP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZIT-fc-27c"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DEa-ZY-sPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1425" y="63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchImg" width="512" height="682"/>
+    </resources>
+</document>
